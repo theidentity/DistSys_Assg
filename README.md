@@ -5,14 +5,12 @@
 - Both client and server programs run on same machine and can exchange messages.
 
 ## Example ##
-'''
 
 	Client : Hi
 	Server : Hello There
 	Client : Checking the sockets
 	Server : All Clear
 
-'''
 - The client and server can exchange messages one after another sequentially.
 - First the server starts running and the client initiates the first message in this case.
 
@@ -25,7 +23,7 @@
 - The **PrintWriter** class helps to easily send these streams via socket.
 - The socket's **getOutputStream()**  and **getInputStream()** methods are used to exchange streams of data between server and client.
 
-'''
+'''java
 
 import java.io.*;
 import java.net.*;
@@ -57,7 +55,6 @@ public class Server
         }
     }
 }
-
 '''
 
 ## Client.java ## 
@@ -69,7 +66,7 @@ public class Server
 - **PrintWriter** is used to get and put the information to and from sockets.
 - The **getOutputStream()** and **getInputStream()** methods of the socket handle the streams.
 
-'''
+'''java
 
 import java.io.*;
 import java.net.*;
@@ -98,5 +95,4 @@ public class Client
         }
     }
 }
-
 '''
